@@ -6,11 +6,12 @@ import java.util.List;
 import java.util.Optional;
 
 public class Main {
+    // 將ENV_CONFIGMAP(格式:XX_XXX_XX) 轉為HelmChat
     public static void main(String[] args) {
         BufferedReader reader;
 
         try {
-            reader = new BufferedReader(new FileReader("C:\\Users\\user\\Downloads\\0221_bank_env\\bo\\backoffice-configmaps2.yml"));
+            reader = new BufferedReader(new FileReader("D:\\tool\\test.yml"));
             String line = reader.readLine();
             LayerDTO all = new LayerDTO("all");
             LayerDTO root = new LayerDTO("vars");
